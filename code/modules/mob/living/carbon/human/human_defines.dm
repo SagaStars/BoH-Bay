@@ -112,3 +112,7 @@
 	var/list/descriptors
 
 	var/last_smelt = 0
+
+	can_buckle = TRUE
+	buckle_lying = FALSE
+	can_ride_typecache = list(/mob/living/carbon/human)
