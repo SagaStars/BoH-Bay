@@ -1,3 +1,14 @@
+/datum/riding
+	var/generic_pixel_x = 0 //All dirs show this pixel_x for the driver
+	var/generic_pixel_y = 0 //All dirs show this pixel_y for the driver, use these vars if the pixel shift is stable across all dir, override handle_vehicle_offsets otherwise.
+	var/next_vehicle_move = 0 //used for move delays
+	var/vehicle_move_delay = 2 //tick delay between movements, lower = faster, higher = slower
+	var/keytype = null
+	var/atom/movable/ridden = null
+
+	var/slowed = FALSE
+	var/slowvalue = 1
+
 /datum/riding/proc/on_vehicle_move()
 	for(var/mob/living/M in ridden.buckled_mobs)
 		ride_check(M)
