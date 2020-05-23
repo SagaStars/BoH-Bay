@@ -251,6 +251,7 @@
 #include "code\datums\local_network.dm"
 #include "code\datums\mil_ranks.dm"
 #include "code\datums\progressbar.dm"
+#include "code\datums\riding.dm"
 #include "code\datums\ruins.dm"
 #include "code\datums\security_state.dm"
 #include "code\datums\shackle_law_sets.dm"
